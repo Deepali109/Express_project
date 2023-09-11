@@ -1,0 +1,143 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+:root{
+    --main-bg: #1e272e;
+}
+.navbar-collapse{
+    flex-grow: 1;
+    align-items: center;
+    justify-content: end;
+}
+.navbar{
+    color: #fff;
+    background-color:var(--main-bg)
+}
+.container-fluid{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* background-color: rgb(70, 70, 70); */
+}
+.container-fluid a{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(230, 233, 235);
+}
+.container-fluid a:hover{
+    color: rgb(197, 197, 197);
+    font-size: 21px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 92vh;
+}
+.left_container{
+    width: 55%;
+    height: 80%;
+    margin-left: 2rem;
+    padding-left: 7rem;
+}
+.right_container{
+    max-width: 30%;
+    max-height: 50%;
+    margin-left: 5rem;
+    margin-top: 3.1rem;
+    padding-left: 7rem;
+}
+.img-fluid{
+    height:400px;
+}
+/* .carousel-item img{
+    height:400px;
+} */
+.w-100{
+    width: 100px;
+    height:400px;
+}
+.text{
+    margin-top: 8rem;
+}
+.text p{
+    font-size: 25px;
+    font-family: 'Piazzolla', serif;
+
+}
+.text h1{
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+}
+span{
+    color:  rgb(36, 120, 245);;
+}
+a button{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 7px 11px;
+    font-weight: bold;
+    box-shadow: 3px 3px 2px grey;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+a button:hover{
+    /* background-color: #93c4e9; */
+    box-shadow: 3px 3px 2px rgb(146, 172, 231);
+}
+.navbar-toggler{
+    background-color: #e0dede;
+}
+.fa-snowflake{
+ transition: all linear;
+ animation: rot 2s linear infinite;
+ color: rgb(36, 120, 245);
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.right_container figure img{
+    filter: drop-shadow(0 0.5rem 1rem rgb(61, 60, 60));
+}
+footer{
+    width: 100%;
+    background-color:var(--main-bg);
+    margin-top: auto;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #e0dede;
+    line-height: 2.7rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px){
+    
+    .left_container{
+        width: 90%;
+        height: auto;
+        margin: 1rem 1rem;
+    }
+
+    .right_container{
+        width: 60%;
+        height: 50%;
+        /* height: auto; */
+        margin-top: 3rem ;
+    }
+    .w-100{
+        width: 200px;
+        height:300px;
+    }
+
+}
