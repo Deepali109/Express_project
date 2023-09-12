@@ -34,7 +34,7 @@ app.get("/weather", (req, res)=>{
 
 app.get("*", (req, res)=>{
     res.render("404error", {
-        errorMsg: 'Opps! Page Not Found'  
+        errorMsg: 'Opps! Page Not Found. Please go back'  
     });// here as u see we can also pass objects.
 })
 
